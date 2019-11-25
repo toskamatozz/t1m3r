@@ -3,8 +3,18 @@
   padding: 0;
 }
 
+body {
+  background: lightcyan;
+  color: white;
+  font-family: Verdana;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .start {
-  margin: 20px auto;
   height: 100px;
   width: 200px;
   display: -webkit-box;
@@ -18,5 +28,70 @@
           align-items: center;
   color: white;
   background: cornflowerblue;
+  cursor: pointer;
+}
+
+.stop {
+  height: 100px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background: tomato;
+  cursor: pointer;
+}
+
+.clear {
+  height: 100px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background: yellowgreen;
+  cursor: pointer;
+}
+
+.message {
+  margin: 100px auto 20px auto;
+  height: 100px;
+  width: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: tomato;
+  background: lightblue;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.buttons {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 640px;
 }
 /*# sourceMappingURL=main.css.map */

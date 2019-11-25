@@ -8,17 +8,34 @@
     <title></title>
 </head>
 <body>
-    <div class="start">Start</div>
+    <div class="message"></div>
+    <div class="buttons">
+        <div class="start">Start</div>
+        <div class="stop">Stop</div>
+        <div class="clear">Clear</div>
+    </div>
     
     
     <script>
-        let time = Date();
         let start = document.querySelector('.start');
-        start.addEventListener('click', function(){
-            setTimeout(function(){
-                start.innerHTML = time;
-            },3000);    
-        });
+        let stop = document.querySelector('.stop');
+        let clear = document.querySelector('.clear');
+        let message = document.querySelector('.message');
+        function text(){
+            message.innerHTML = 'Сработал таймер!';
+        }
+        function notext(){
+            message.innerHTML = '';
+        }
+        function on(){
+            timer = setTimeout(text, 3000);
+        }
+        function off(){
+            clearTimeout(timer);
+        }
+        start.addEventListener('click', on);
+        stop.addEventListener('click', off);
+        clear.addEventListener('click', notext);
     </script>
 </body>
 </html>
